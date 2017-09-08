@@ -5,10 +5,10 @@
   - id: php-unit
   - id: php-cbf
     files: \.(php)$
-    args: [--standard=PSR2 --ignore=**/*.blade.php -p]
+    args: [--standard=PSR1,PSR2 --ignore=**/*.blade.php -p]
   - id: php-cs
     files: \.(php)$
-    args: [--standard=PSR2 --ignore=**/*.blade.php -p]
+    args: [--standard=PSR1,PSR2 --ignore=**/*.blade.php -p]
 
 -   repo: git://github.com/pre-commit/pre-commit-hooks.git
     sha: v0.9.2
@@ -16,4 +16,3 @@
     -   id: trailing-whitespace
     -   id: detect-private-key
     -   id: end-of-file-fixer
-
